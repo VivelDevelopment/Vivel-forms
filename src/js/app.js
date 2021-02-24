@@ -1,14 +1,17 @@
 import React from 'react';
+import Header from './Header'
+import './app.scss';
 
 
 export default function App() {
 
   return (
-    <>
-      <h1>I am App Component!!!</h1>
+    <div>
+      <Header />
+      <h1>Lest build Froms</h1>
       <button onClick={() => {
         electron.notificationApi.sendNotification('Hello Im Vivel froms!');
       }}>Notify</button>
-    </>
+    </div>
   )
 }

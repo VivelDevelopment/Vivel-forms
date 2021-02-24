@@ -1,0 +1,85 @@
+.HeaderContainer {
+  display: flex;
+  position: flexed;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: var(--slack-color);
+  color: white;
+}
+
+.HeaderLeft {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+> HeaderLeft > .MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.HeaderCenter {
+  flex: 0.4;
+  opacity: 1;
+  border-radius: 6px;
+  background-color: #02808f;
+  text-align: center;
+  display: flex;
+  padding: 0 50px;
+  color: #5e594f;
+  border: 1px gray solid;
+}
+
+> HeaderCenter > input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  min-width: 30vw;
+  outline: 0;
+  color: white;
+  ::placeholder {
+    color: black;
+  }
+}
+
+.HeaderRight {
+  flex: 0.3;
+  display: flex;
+  align-items: flex-end;
+}
+
+> HeaderRight > .MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.Avatar {
+  cursor: pointer;
+}
+
+.Avatar:hover {
+  opacity: 0.8;
+}
+
+.AccessTimeIcon:hover {
+  cursor: pointer;
+}
+
+.SearchIcon {
+  cursor: pointer;
+}
+
+.SearchIcon:hover {
+  opacity: 0.8;
+}
+
+.HelpOutlineIcon {
+  cursor: pointer;
+}
+
+.HelpOutlineIcon:hover {
+  opacity: 0.8;
+}
