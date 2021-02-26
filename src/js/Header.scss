@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  background-color: var(--slack-color);
+  background-color: var(--color);
   color: white;
 }
 
@@ -14,6 +14,11 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+
+  h3 {
+    display: flex;
+    font-weight: 200;
+  }
 
   .MuiSvgIcon-root {
     margin-left: auto;
@@ -39,9 +44,9 @@
     min-width: 30vw;
     outline: 0;
     color: white;
-    ::placeholder {
-      color: black;
-    }
+  }
+  ::placeholder {
+    color: black;
   }
 }
 
@@ -56,30 +61,30 @@
   }
 }
 
-.Avatar {
-  cursor: pointer;
-}
-
-.Avatar:hover {
-  opacity: 0.8;
-}
-
-.AccessTimeIcon:hover {
-  cursor: pointer;
+.AccessTimeIcon {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
 .SearchIcon {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
-.SearchIcon:hover {
-  opacity: 0.8;
+.SearchIcon {
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
 
 .HelpOutlineIcon {
-  cursor: pointer;
-}
-
-.HelpOutlineIcon:hover {
-  opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
